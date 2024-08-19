@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px; 
+        }
+        
+        body {
+            font-family: "Quicksand", sans-serif;
+        }
+        .desktop-menu{
+            width: 100%;
+            height: 100%;
+            text-align: start;
+            margin: 30px 0px 0px 30px;
+        }
+        .desktop-menu ul{
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+        }
+        .title{
+            font-size: var(--lg);
+            font-weight: bold;
+            margin-bottom: 20px;
+        } 
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 70px
+        }
+        .container ul li{
+            padding: 8px 8px 8px 0px
+        }
+        .container ul:last-child{
+            position: absolute;
+            bottom: 50px;
+        }
+        .desktop-menu ul li a{
+            color: var(--black); 
+            font-size: var(--md);
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .container ul:last-child li{
+            padding: 0px 0px 0px 0px;
+            margin: 0px;   
+        }
+        .container ul:last-child p{
+            margin: 0px;
+            
+        }
+        .signout li p{
+            color: var(--very-light-pink)
+        }
+        .container ul:last-child a{
+            color: var(--hospital-green);
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop-menu">
+        <p class="title">CATEGORIES</p>
+        <div class="container">
+            <ul class="menu">
+                <li>
+                    <a href="/">All</a>
+                </li>
+                <li>
+                    <a href="/">Clothes</a>
+                </li>
+                <li>
+                    <a href="/">Electronics</a>
+                </li>
+                <li>
+                    <a href="/">Furnitures</a>
+                </li>
+                <li>
+                    <a href="/">Toys</a>
+                </li>
+                <li>
+                    <a href="/">Others</a>
+                </li>
+            </ul>
+            <ul class="accounts">
+                <li>
+                    <a href="/">My Orders</a>
+                </li>
+                <li>
+                    <a href="/">My Accounts</a>
+                </li>
+            </ul>
+            <ul class="signout">
+                <li>
+                    <p>lotus@gmail.com</p>
+                </li>
+                <li>
+                    <a href="/">Sign out</a>
+                </li>
+            </ul>
+        </div>    
+    </div>
+</body>
+</html>
