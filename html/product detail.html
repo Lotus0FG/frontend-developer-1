@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+<style>
+  :root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+  body {
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .container{
+    width: 360px;
+    padding-bottom: 24px;
+    position: absolute;
+    right: 0;
+  }
+  .container-img .close {
+    background: var(--white);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-img .close:hover {
+    cursor: pointer;
+  }
+  .container-img .product {
+    width: 100%;
+    height: 360px;
+    border-radius: 0 0 15px 15px;
+    object-fit: cover;
+    margin-bottom: 50px;
+  }
+  .container-info {
+    padding: 30px;
+  }
+  .container-info :nth-child(1) {
+    font-size: var(--lg);
+    font-weight: bold;
+  }
+  .container-info :nth-child(2) {
+    font-size: var(--lg);
+    margin: 8px 0 30px 0;
+    color: var(--very-light-pink)
+  } 
+  .container-info :nth-child(3) {
+    margin: 0;
+    color: var(--very-light-pink)
+  }
+  .container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-button button {
+    width: 300px;
+    height: 50px;
+    background-color: var(--hospital-green);
+    font-size: var(--md);
+    font-weight: bold;
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif; 
+    cursor: pointer;
+  }
+  .add-to-card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+  }
+  </style>
+</head>
+<body>
+<aside >
+    <div class="container">
+        <div class="container-img">
+            <div class="close">
+                <img src="./iconos/icon_close.png" alt="salir" class="exit">
+            </div>
+            <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike" class="product">     
+        </div>
+        <div class="container-info">
+            <span>$ 120.00</span>
+            <p>Bike</p>
+            <p>Esta bicicleta es la mas rapida del condado y si la compras no te quedas pelon</p>
+
+        </div>
+        <div class="container-button">
+            <button class="primary-button add-to-card-button"><img src="./iconos/bt_add_to_cart.svg" alt="Add to cart">
+            Add to cart</button> 
+        </div>
+    </div>
+</aside>   
+</body>
+</html>
