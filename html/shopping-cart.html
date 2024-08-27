@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+<style>
+  :root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+  body {
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .shopping-cart{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .container{
+    width: 360px;
+    padding-bottom: 24px;
+    margin: 10px;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border-bottom: 1px solid var(--very-light-pink)
+  }
+  .navbar :nth-child(1) {
+    display: none;
+    transform: rotate(180deg);
+  }
+
+  .navbar title{
+    font-size: var(--lg);
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 10px 50px;
+  }
+  .container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px 10px 0;
+  }
+  .container-info div {
+    display: flex;
+    align-items: center;
+  }
+  .container-info div:first-child img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .container-info div:first-child p {
+    font-size: var(--md);
+    color: var(--very-light-pink);
+    margin: 0 0 0 30px;
+  }
+  .container-info div:last-child span {
+    margin: 0 20px 0 0;
+  }
+
+  .container-info span {
+    font-size: var(--lg);
+    font-weight: bold;
+  }
+  
+  .container-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--text-input-field);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+  }
+  .container-total p{
+    margin: 0;
+  }
+  .container-total span {
+    font-weight: bold;
+    font-size: var(--lg);
+  }
+  .container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-button button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--hospital-green);
+    font-size: var(--md);
+    font-weight: bold;
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif; 
+    cursor: pointer;
+  }
+  .add-to-card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+    .navbar :nth-child(1){
+        display: block;
+    }
+    .navbar :nth-child(2) {
+        display: none;
+    }
+  }
+  </style>
+</head>
+<body>
+<div class="shopping-cart">
+    <aside class="container">
+       
+        <div class="navbar">
+            <img src="./iconos/icon_menu.svg" alt="menu">
+            <img src="./iconos/flechita.svg" alt="">
+            <title>Shopping Cart</title>   
+        </div>
+        <div class="container-info">
+            <div>
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike">
+                <p>Bike</p>
+            </div>
+            <div>
+                <span>$ 120.00</span>
+                <img src="./iconos/icon_close.png" alt="remove">
+            </div>
+        </div>
+        <div class="container-info">
+            <div>
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike">
+                <p>Bike</p>
+            </div>
+            <div>
+                <span>$ 120.00</span>
+                <img src="./iconos/icon_close.png" alt="remove">
+            </div>
+        </div>
+        <div class="container-info">
+            <div>
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike">
+                <p>Bike</p>
+            </div>
+            <div>
+                <span>$ 120.00</span>
+                <img src="./iconos/icon_close.png" alt="remove">
+            </div>
+        </div>
+        <div class="container-info">
+            <div>
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike">
+                <p>Bike</p>
+            </div>
+            <div>
+                <span>$ 120.00</span>
+                <img src="./iconos/icon_close.png" alt="remove">
+            </div>
+        </div>
+        <div class="container-info">
+            <div>
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike">
+                <p>Bike</p>
+            </div>
+            <div>
+                <span>$ 120.00</span>
+                <img src="./iconos/icon_close.png" alt="remove">
+            </div>
+        </div>
+        <div class="container-info">
+            <div>
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike">
+                <p>Bike</p>
+            </div>
+            <div>
+                <span>$ 120.00</span>
+                <img src="./iconos/icon_close.png" alt="remove">
+            </div>
+        </div>
+        <div class="container-total">
+            <p>Total</p>
+            <span>$560.00</span>
+        </div>
+        <div class="container-button">
+            <button class="primary-button add-to-card-button">
+            Checkout</button> 
+        </div>
+    </aside> 
+</div>  
+</body>
+</html>
